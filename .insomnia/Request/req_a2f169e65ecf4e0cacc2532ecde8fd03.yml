@@ -1,0 +1,53 @@
+_id: req_a2f169e65ecf4e0cacc2532ecde8fd03
+type: Request
+parentId: fld_45357dd34100475ba2881ca1e6838eea
+modified: 1644384512196
+created: 1644335405956
+url: "{{ _.localhost }}/api/ivs"
+name: get channels
+description: |-
+  # ListChannelsCommand
+
+  채널 리스트를 획득
+
+
+  ```
+  {
+  	"success": {
+  		"$metadata": {
+  			"httpStatusCode": 200,
+  			"requestId": "aa022dea-7017-4dac-af18-4606cd10f2e2",
+  			"cfId": "HlEeEOZNxzbv6Lk2Qfvbz0_4C5J8OWPjsPaZWj5FpkwZ3-Jhk417Ew==",
+  			"attempts": 1,
+  			"totalRetryDelay": 0
+  		},
+  		"channels": [
+  			{
+  				"arn": "arn:aws:ivs:us-east-1:121323684128:channel/Cj5ynk97sEJv",
+  				"authorized": false,
+  				"latencyMode": "LOW",
+  				"name": "miko-ivs",
+  				"recordingConfigurationArn": "",
+  				"tags": {}
+  			}
+  		]
+  	}
+  }
+  ```
+method: GET
+body: {}
+parameters:
+  - id: pair_8f48303d4e7b4accbcc3afafe190aabf
+    name: arn
+    value: "123214"
+    description: ""
+headers: []
+authentication: {}
+metaSortKey: -1641708987932.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

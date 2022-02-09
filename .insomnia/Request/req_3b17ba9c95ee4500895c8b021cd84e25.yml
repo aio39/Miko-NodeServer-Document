@@ -1,0 +1,69 @@
+_id: req_3b17ba9c95ee4500895c8b021cd84e25
+type: Request
+parentId: fld_45357dd34100475ba2881ca1e6838eea
+modified: 1644385864424
+created: 1644335228778
+url: "{{ _.localhost }}/api/ivs"
+name: create channel
+description: >-
+  # CreateChannelCommand
+
+  ## 채널을 생성합니다
+
+
+  ```
+
+  {
+  	"result": {
+  		"$metadata": {
+  			"httpStatusCode": 200,
+  			"requestId": "534c5616-7b6e-4baf-9e0a-218c75453826",
+  			"cfId": "GID-uvX5AZ25gIUWgSurRA4Tm66PG8q0wfLa4pkVnie0OgzoiKPAvw==",
+  			"attempts": 1,
+  			"totalRetryDelay": 0
+  		},
+  		"channel": {
+  			"arn": "arn:aws:ivs:us-east-1:121323684128:channel/n9xkCcrYutBJ",
+  			"authorized": false,
+  			"ingestEndpoint": "de853ef2a345.global-contribute.live-video.net",
+  			"latencyMode": "LOW",
+  			"name": "test",
+  			"playbackUrl": "https://de853ef2a345.us-east-1.playback.live-video.net/api/video/v1/us-east-1.121323684128.channel.n9xkCcrYutBJ.m3u8",
+  			"recordingConfigurationArn": "",
+  			"tags": {
+  				"key": "miko"
+  			},
+  			"type": "BASIC"
+  		},
+  		"streamKey": {
+  			"arn": "arn:aws:ivs:us-east-1:121323684128:stream-key/ycyiGQKFWCxi",
+  			"channelArn": "arn:aws:ivs:us-east-1:121323684128:channel/n9xkCcrYutBJ",
+  			"tags": {},
+  			"value": "sk_us-east-1_ycyiGQKFWCxi_uus7kRO9G3CumD6bVt7VnpUIErwqMd"
+  		}
+  	}
+  }
+
+
+  ```
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name":"test"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_a7c55977828c4243b81dc3fb24cc9b29
+authentication: {}
+metaSortKey: -1641052427721.125
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

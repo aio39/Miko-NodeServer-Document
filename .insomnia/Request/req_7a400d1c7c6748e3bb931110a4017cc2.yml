@@ -1,0 +1,63 @@
+_id: req_7a400d1c7c6748e3bb931110a4017cc2
+type: Request
+parentId: fld_45357dd34100475ba2881ca1e6838eea
+modified: 1644389533085
+created: 1644337214726
+url: "{{ _.localhost }}/api/ivs/stream"
+name: get stream
+description: >-
+  # GetStreamCommand
+
+  ## 채널 arn 으로, 채널에 해당하는 스트림 채널에 대한 정보를 줌.
+
+
+  ```
+
+  {
+  	"result": {
+  		"$metadata": {
+  			"httpStatusCode": 200,
+  			"requestId": "c636f7b1-9d26-45fe-b7ee-92b8daecf690",
+  			"cfId": "EKhg-PZZFbb7e8jkIE3vJLVc2b1Dnh-Erdp4dLft5QDTfrvlCR2P1w==",
+  			"attempts": 1,
+  			"totalRetryDelay": 0
+  		},
+  		"stream": {
+  			"channelArn": "arn:aws:ivs:us-east-1:121323684128:channel/Cj5ynk97sEJv",
+  			"health": "HEALTHY",
+  			"playbackUrl": "https://de853ef2a345.us-east-1.playback.live-video.net/api/video/v1/us-east-1.121323684128.channel.Cj5ynk97sEJv.m3u8",
+  			"startTime": "2022-02-09T05:25:16.000Z",
+  			"state": "LIVE",
+  			"streamId": "st-1CRLyb5PfX778akC0gS2Nej",
+  			"viewerCount": 0
+  		}
+  	}
+  }
+
+
+  ```
+method: GET
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"arn":"arn:aws:ivs:us-east-1:121323684128:channel/Cj5ynk97sEJv"
+    }
+parameters:
+  - id: pair_8f48303d4e7b4accbcc3afafe190aabf
+    name: arn
+    value: "123214"
+    description: ""
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_9be1b82af2e64809a340c74ee5104758
+authentication: {}
+metaSortKey: -1639246887114.8438
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
