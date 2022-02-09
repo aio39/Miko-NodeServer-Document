@@ -1,10 +1,10 @@
-_id: req_3d7852b46bc948c2b34aa6a2c334ae2f
+_id: req_1b3a5c5123d741768451e1e98a28b857
 type: Request
 parentId: fld_45357dd34100475ba2881ca1e6838eea
-modified: 1644392677412
-created: 1644336574981
+modified: 1644392700887
+created: 1644392687925
 url: "{{ _.localhost }}/api/ivs/streamkey"
-name: get stream key detail
+name: delete stream key
 description: |+
   # GetStreamKeyCommand
 
@@ -31,7 +31,7 @@ description: |+
 
   ```
 
-method: GET
+method: DELETE
 body:
   mimeType: application/json
   text: |-
@@ -48,7 +48,7 @@ headers:
     value: application/json
     id: pair_9be1b82af2e64809a340c74ee5104758
 authentication: {}
-metaSortKey: -1639411027192.6875
+metaSortKey: -1639411027167.6875
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

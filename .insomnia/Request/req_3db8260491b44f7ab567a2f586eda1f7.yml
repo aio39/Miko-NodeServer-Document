@@ -1,10 +1,10 @@
-_id: req_37679185f9a3454a88eec216747eda87
+_id: req_3db8260491b44f7ab567a2f586eda1f7
 type: Request
 parentId: fld_45357dd34100475ba2881ca1e6838eea
-modified: 1644391834994
-created: 1644337140527
-url: "{{ _.localhost }}/api/ivs/streams"
-name: get streams
+modified: 1644392457069
+created: 1644392089640
+url: "{{ _.localhost }}/api/ivs/metadata"
+name: push metadata
 description: |-
   # GetStreamCommand
   ## 모든 채널에서 스트림되고 있는 스트림채널 리스트를 보여줌
@@ -33,12 +33,16 @@ description: |-
   	}
   }
   ```
-method: GET
+method: POST
 body:
   mimeType: application/json
   text: |-
     {
-    	"arn":"arn:aws:ivs:us-east-1:121323684128:channel/Cj5ynk97sEJv"
+    	"arn":"arn:aws:ivs:us-east-1:121323684128:channel/Cj5ynk97sEJv",
+    	"metadata":{
+    		"test":"abc",
+    		"avbc":"avbc22"
+    	}
     }
 parameters:
   - id: pair_8f48303d4e7b4accbcc3afafe190aabf
@@ -50,7 +54,7 @@ headers:
     value: application/json
     id: pair_9be1b82af2e64809a340c74ee5104758
 authentication: {}
-metaSortKey: -1639411027142.6875
+metaSortKey: -1639287922121.8047
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true

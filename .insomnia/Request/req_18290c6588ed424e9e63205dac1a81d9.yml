@@ -1,10 +1,10 @@
-_id: req_2a439657a8154c43b0d9298032e8a8a3
+_id: req_18290c6588ed424e9e63205dac1a81d9
 type: Request
 parentId: fld_45357dd34100475ba2881ca1e6838eea
-modified: 1644393749332
-created: 1644335653762
+modified: 1644393774555
+created: 1644393757823
 url: "{{ _.localhost }}/api/ivs/one"
-name: get one channel
+name: update one channel
 description: >-
   #GetChannelCommand
 
@@ -42,12 +42,15 @@ description: >-
   }
 
   ```
-method: GET
+method: PATCH
 body:
   mimeType: application/json
   text: |-
     {
-    	"arn":"arn:aws:ivs:us-east-1:121323684128:channel/Cj5ynk97sEJv"
+    	"arn":"arn:aws:ivs:us-east-1:121323684128:channel/Cj5ynk97sEJv",
+    	"update":{
+    		
+    	}
     }
 parameters:
   - id: pair_8f48303d4e7b4accbcc3afafe190aabf
@@ -59,7 +62,7 @@ headers:
     value: application/json
     id: pair_9be1b82af2e64809a340c74ee5104758
 authentication: {}
-metaSortKey: -1640395867509.75
+metaSortKey: -1640231727456.9062
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
