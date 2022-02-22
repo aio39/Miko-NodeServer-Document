@@ -1,7 +1,7 @@
 _id: req_3d7852b46bc948c2b34aa6a2c334ae2f
 type: Request
 parentId: fld_45357dd34100475ba2881ca1e6838eea
-modified: 1644392677412
+modified: 1644412549646
 created: 1644336574981
 url: "{{ _.localhost }}/api/ivs/streamkey"
 name: get stream key detail

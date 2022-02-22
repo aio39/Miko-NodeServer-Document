@@ -1,37 +1,40 @@
-_id: req_37679185f9a3454a88eec216747eda87
+_id: req_536364f5f9854248a081cc40371ca725
 type: Request
 parentId: fld_45357dd34100475ba2881ca1e6838eea
-modified: 1644412547654
-created: 1644337140527
+modified: 1644412545990
+created: 1644412123478
 url: "{{ _.localhost }}/api/ivs/streams"
-name: get streams
-description: |-
+name: get stream session list
+description: >-
   # GetStreamCommand
-  ## 모든 채널에서 스트림되고 있는 스트림채널 리스트를 보여줌
+
+  ## 채널 arn 으로, 채널에 해당하는 스트림 채널에 대한 정보를 줌.
 
 
   ```
+
   {
   	"result": {
   		"$metadata": {
   			"httpStatusCode": 200,
-  			"requestId": "308a4b52-b0ff-4007-9346-bd1953c30e78",
-  			"cfId": "50i8jwr4FQNE2VPsqXt6QYp_oljySnoRakS74kQdFwmjHf1whFCx0A==",
+  			"requestId": "c636f7b1-9d26-45fe-b7ee-92b8daecf690",
+  			"cfId": "EKhg-PZZFbb7e8jkIE3vJLVc2b1Dnh-Erdp4dLft5QDTfrvlCR2P1w==",
   			"attempts": 1,
   			"totalRetryDelay": 0
   		},
-  		"streams": [
-  			{
-  				"channelArn": "arn:aws:ivs:us-east-1:121323684128:channel/Cj5ynk97sEJv",
-  				"health": "HEALTHY",
-  				"startTime": "2022-02-09T05:25:16.000Z",
-  				"state": "LIVE",
-  				"streamId": "st-1CRLyb5PfX778akC0gS2Nej",
-  				"viewerCount": 0
-  			}
-  		]
+  		"stream": {
+  			"channelArn": "arn:aws:ivs:us-east-1:121323684128:channel/Cj5ynk97sEJv",
+  			"health": "HEALTHY",
+  			"playbackUrl": "https://de853ef2a345.us-east-1.playback.live-video.net/api/video/v1/us-east-1.121323684128.channel.Cj5ynk97sEJv.m3u8",
+  			"startTime": "2022-02-09T05:25:16.000Z",
+  			"state": "LIVE",
+  			"streamId": "st-1CRLyb5PfX778akC0gS2Nej",
+  			"viewerCount": 0
+  		}
   	}
   }
+
+
   ```
 method: GET
 body:
@@ -50,7 +53,7 @@ headers:
     value: application/json
     id: pair_9be1b82af2e64809a340c74ee5104758
 authentication: {}
-metaSortKey: -1639411027142.6875
+metaSortKey: -1639369992135.7266
 isPrivate: false
 settingStoreCookies: true
 settingSendCookies: true
